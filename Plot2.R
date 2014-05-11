@@ -1,0 +1,5 @@
+data=read.table("C:/Users/Shrabanti/Desktop/p2.txt")
+d=data.matrix(data)
+plot(d[,3],d[,4],ylab="Global Active Power (kilowatts)",type="l")
+dev.copy(png,'C:/Users/Shrabanti/Desktop/Plot2.png',width=480,height=480)
+dev.off()
