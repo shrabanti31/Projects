@@ -1,0 +1,5 @@
+data=read.table("C:/Users/Shrabanti/Desktop/data.txt",sep=';')
+d=data.matrix(data)
+hist(d[,3],col="red",include.lowest = TRUE, right = TRUE,main=paste("Global Active Power"),xlim=range(c(0,6)),ylim=range(c(seq(0,1200))),xlab="Global Active Power (kilowatts)",axes=TRUE,plot=TRUE)
+dev.copy(png,'C:/Users/Shrabanti/Desktop/Plot1.png',width=480,height=480)
+dev.off()
